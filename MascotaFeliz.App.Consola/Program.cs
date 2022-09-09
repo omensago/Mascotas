@@ -10,27 +10,53 @@ namespace MascotaFeliz.App.Consola
     {
 
         private static IRepositorioDueno _repoDueno = new RepositorioDueno(new Persistencia.AppContext());
+        private static IRepositorioVeterinario _repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
+        private static IRepositorioHistoria _repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
+        private static IRepositorioMascota _repoMascota = new RepositorioMascota(new Persistencia.AppContext());
+
 
 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 
-            AddDueno();
+            AddVeterinario();
+
         }
 
-        private static void AddDueno()
+        private static void AddVeterinario()
         {
-            var dueno = new Dueno
+            var veterinario = new Veterinario
             {
                 //Cedula = "1212",
-                Nombres = "Juan",
-                Apellidos = "Sin Miedo",
-                Direccion = "Bajo un puente",
-                Telefono = "1234567891",
-                Correo = "juansinmiedo@gmail.com"
+                Nombres = "Mario",
+                Apellidos = "Sandoval",
+                Direccion = "casa 21",
+                Telefono = "60565546546",
+                TarjetaProfesional = "11111111"
             };
-            _repoDueno.AddDueno(dueno);
+            _repoVeterinario.AddVeterinario(veterinario);
         }
+        private static void AddMascota()
+        {
+            var mascota = new Mascota
+            {
+                //Cedula = "1212",
+                Nombre = "Tito",
+                Color = "Negro con Blanco",
+                Especie = "Perro",
+                Raza = "Pinche"
+            };
+            _repoMascota.AddMascota(mascota);
+        }
+        private static void AddHistoria()
+        {
+            var historia = new Historia
+            {
+                fecha = new DateTime(2012, 1, 1)
+            };
+            _repoHistoria.AddHistoria(historia);
+        }
+
     }
 }
