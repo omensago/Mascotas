@@ -76,9 +76,7 @@ namespace MascotaFeliz.App.Persistencia
                 mascotaEncontrado.Color= mascota.Color;
                 mascotaEncontrado.Especie = mascota.Especie;
                 mascotaEncontrado.Raza = mascota.Raza;
-                mascotaEncontrado.DuenoId = mascota.DuenoId;
-                mascotaEncontrado.VeterinarioId = mascota.VeterinarioId;
-                mascotaEncontrado.HistoriaId = mascota.HistoriaId;
+              
 
 
                 _appContext.SaveChanges();

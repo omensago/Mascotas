@@ -11,7 +11,7 @@ namespace MascotaFeliz.App.Consola
 
         private static IRepositorioDueno _repoDueno = new RepositorioDueno(new Persistencia.AppContext());
         private static IRepositorioVeterinario _repoVeterinario = new RepositorioVeterinario(new Persistencia.AppContext());
-        private static IRepositorioHistoria _repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
+        //private static IRepositorioHistoria _repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
         private static IRepositorioMascota _repoMascota = new RepositorioMascota(new Persistencia.AppContext());
 
 
@@ -20,43 +20,55 @@ namespace MascotaFeliz.App.Consola
         {
             Console.WriteLine("Hello World!");
 
-            AddVeterinario();
-
+            //AddVeterinario();
+           // AddMascota();
+           //ListarMascotas();
+           //AddDueno();
+           BuscarporMascota("Capuchino");
         }
 
-        private static void AddVeterinario()
+        private static void AddDueno()
         {
-            var veterinario = new Veterinario
+            var dueno = new Dueno
             {
                 //Cedula = "1212",
-                Nombres = "Mario",
-                Apellidos = "Sandoval",
-                Direccion = "casa 21",
-                Telefono = "60565546546",
-                TarjetaProfesional = "11111111"
+                Nombres = "Juan",
+                Apellidos = "Diaz",
+                Direccion = "casa 77",
+                Telefono = "555546546",
+                Correo = "juan@gmail.com"
             };
-            _repoVeterinario.AddVeterinario(veterinario);
+            _repoDueno.AddDueno(dueno);
         }
         private static void AddMascota()
         {
             var mascota = new Mascota
             {
                 //Cedula = "1212",
-                Nombre = "Tito",
-                Color = "Negro con Blanco",
-                Especie = "Perro",
-                Raza = "Pinche"
+                Nombre = "Capuchino",
+                Color = "negro",
+                Especie = "Gato",
+                Raza = "Siames"
+
             };
             _repoMascota.AddMascota(mascota);
         }
-        private static void AddHistoria()
+          private static void ListarMascotas()
         {
-            var historia = new Historia
+            var mascotas= _repoMascota.GetAllMascotas();
+            foreach (Mascota m in mascotas)
             {
-                fecha = new DateTime(2012, 1, 1)
-            };
-            _repoHistoria.AddHistoria(historia);
+                Console.WriteLine(m.Nombre + " "+ m.Raza + " "+ m.Color+ " "+ m.Especie);
+            }
         }
 
-    }
+        private static void BuscarporMascota(string Nombre)
+        {
+            var GetMascota = _repoMascota.GetMascotasPorFiltro(Nombre); 
+             foreach (Mascota i in GetMascota)
+            {
+                Console.WriteLine(i.Nombre + " "+ i.Raza + " "+ i.Color+ " "+ i.Especie);
+            }
+        }
+    }     
 }
