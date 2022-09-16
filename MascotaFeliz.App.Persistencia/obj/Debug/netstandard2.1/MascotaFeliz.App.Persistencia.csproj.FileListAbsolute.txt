@@ -21,4 +21,5 @@ C:\Mascota\Mascotas\MascotaFeliz.App.Persistencia\obj\Debug\netstandard2.1\Masco
 C:\Mascota\Mascotas\MascotaFeliz.App.Persistencia\obj\Debug\netstandard2.1\MascotaFeliz.App.Persistencia.csproj.CopyComplete
 C:\Mascota\Mascotas\MascotaFeliz.App.Persistencia\obj\Debug\netstandard2.1\MascotaFeliz.App.Persistencia.dll
 C:\Mascota\Mascotas\MascotaFeliz.App.Persistencia\obj\Debug\netstandard2.1\MascotaFeliz.App.Persistencia.pdb
-C:\Mascota\Mascotas\MascotaFeliz.App.Persistencia\obj\Debug\netstandard2.1\MascotaFeliz.App.Persistencia.csprojAssemblyReference.cache
+C:\Mascota\Mascotas\MascotaFeliz.App.Persistencia\obj\Debug\netstandard2.1\MascotaFeliz.App.Persistencia.csproj.AssemblyReference.cache
+C:\Mascota\Mascotas\MascotaFeliz.App.Persistencia\obj\Debug\netstandard2.1\MascotaFeliz.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig

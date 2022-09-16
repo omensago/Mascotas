@@ -21,7 +21,7 @@ namespace MascotaFeliz.App.Consola
             Console.WriteLine("Hello World!");
 
             //AddVeterinario();
-           // AddMascota();
+           AddMascota();
            //ListarMascotas();
            //AddDueno();
            BuscarporMascota("Capuchino");
@@ -45,7 +45,7 @@ namespace MascotaFeliz.App.Consola
             var mascota = new Mascota
             {
                 //Cedula = "1212",
-                Nombre = "Capuchino",
+                Nombre = "angel",
                 Color = "negro",
                 Especie = "Gato",
                 Raza = "Siames"
