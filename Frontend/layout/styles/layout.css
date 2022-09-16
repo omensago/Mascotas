@@ -451,27 +451,3 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.6rem;}
 	.font-x3{font-size:1.8rem;}
 }
-
-table{
-    align-items: center;
-    width: 80%;
-    margin: 10px 20px 10px 10px;
-    text-align: center;
-    border-collapse: collapse;
-    background-color: rgb(97, 97, 97);    
-}
-th, td{
-    padding: 15px;
-}
-thead{
-    background-color: #e4800f;
-    border-bottom: solid 2px #888888;
-    color: white;
-}
-tr:nth-child(even){
-    background-color: rgb(230, 98, 98);
-}
-tr:hover{
-    background-color: #e4800f;
-    color: white;
-}
