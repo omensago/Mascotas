@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - MascotaFeliz</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
   <link rel="shortcut icon" type="image/x-icon" href="images/icologo.png">
  
 </head>
@@ -15,7 +15,7 @@
  <div class="bgded overlay padtop" style="background-image:url('images/fondo.png');">
   <!-- ################################################################################################ -->
  <img src="images/header1.png" alt="">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">MascotaFeliz</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -26,16 +26,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Index">Home</a>
                         </li>
                           <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Duenos/ListaDuenos">Lista Dueños</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Duenos/ListaDuenos">Lista Dueños</a>
                         </li>
                           <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Mascotas/ListaMascotas">Lista Mascota</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Mascotas/ListaMascotas">Lista Mascota</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                           
 
@@ -52,10 +52,14 @@
     </div>
 
    
-       <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - MascotaFeliz.App.Frontend - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+     <footer class="border-top footer text-muted">
+   <div class="one_quarter last">
+       
+        <img style=" margin-top:2%  " class="fl_right" src="images/fivecode.png" alt="">
+
+
+
+      </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
