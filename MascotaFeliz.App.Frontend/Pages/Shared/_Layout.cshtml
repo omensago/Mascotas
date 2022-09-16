@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MascotaFeliz</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+<<<<<<< HEAD
     <link href="~/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
   <link rel="shortcut icon" type="image/x-icon" href="images/icologo.png">
  
@@ -38,19 +40,58 @@
                             <a class="nav-link text-white" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                           
+=======
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icologo.png">
+>>>>>>> 919da9e76a48e5fc6cd087bcb8030d6a9950c75e
 
-                    </ul>
+</head>
+
+<body id="top" style="background-color: #0a0f1c">
+    <header>
+        <div class="bgded overlay padtop" style="background-image:url('images/fondo.png');">
+            <!-- ################################################################################################ -->
+            <img src="images/header1.png" alt="">
+            <nav
+                class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-page="/Index">MascotaFeliz</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Duenos/ListaDuenos">Lista
+                                    Dueños</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Mascotas/ListaMascotas">Lista
+                                    Mascota</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
     </header>
-    
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
+<<<<<<< HEAD
    
      <footer class="border-top footer text-muted">
    <div class="one_quarter last">
@@ -60,6 +101,13 @@
 
 
       </div>
+=======
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - MascotaFeliz.App.Frontend - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+>>>>>>> 919da9e76a48e5fc6cd087bcb8030d6a9950c75e
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
