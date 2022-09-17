@@ -30,28 +30,50 @@ tr:hover{
 </style>
 <h1 style="color: white;">Listado Mascotas</h1>
 <table class="table">
+<<<<<<< HEAD
 
 
     <tr>Nombre</tr>
     <tr>Color</tr>
     <tr>Especie</tr>
     <tr>Raza</tr>
+=======
+    <thead>
+            <tr>
+                <th scope="col" style="color: white;">N°</th>
+                <th scope="col" style="color: white;">Nombre</th>
+                <th scope="col" style="color: white;">Color</th>
+                <th scope="col" style="color: white;">Especie</th>
+                <th scope="col" style="color: white;">Raza</th>                
+                <th scope="col" style="color: white;"></th> 
+                <th scope="col" style="color: white;"></th> 
+            </tr>
+        </thead>
+>>>>>>> cf48d21e69a4c378910a53c95481525f8057c32a
  
     @foreach (var mascota in Model.listaMascotas)
    { <tr>
-
-        <td>@mascota.Nombre</td>
-        <td>@mascota.Color</td>
-        <td>@mascota.Especie</td>
-        <td>@mascota.Raza</td>
+        <td style="color: white;">@mascota.Id</td>
+        <td style="color: white;">@mascota.Nombre</td>
+        <td style="color: white;">@mascota.Color</td>
+        <td style="color: white;">@mascota.Especie</td>
+        <td style="color: white;">@mascota.Raza</td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./DetallesMascotas" asp-route-mascotaId="@mascota.Id">
                     Detalle Mascota
                 </a>
             </td>
- 
-
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditarMascota" asp-route-duenoId="@mascota.Id">
+                    Editar Dueno
+                </a>
+            </td>
     </tr>
 
    }
 </table>
+<<<<<<< HEAD
+=======
+
+<a class = "btn btn-primary table-btn" asp-page="./EditarMascota" class="btn-default">Adicionar Dueño</a>
+>>>>>>> cf48d21e69a4c378910a53c95481525f8057c32a
