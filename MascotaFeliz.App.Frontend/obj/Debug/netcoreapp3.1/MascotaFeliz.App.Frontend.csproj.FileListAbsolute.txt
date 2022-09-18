@@ -87,7 +87,6 @@ C:\Mascotas\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\R
 =======
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.StaticWebAssets.xml
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.exe
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.deps.json
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.runtimeconfig.json
@@ -140,8 +139,6 @@ C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFel
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Persistencia.dll
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Dominio.pdb
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Persistencia.pdb
-C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.csproj.AssemblyReference.cache
-C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.GeneratedMSBuildEditorConfig.editorconfig
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.AssemblyInfoInputs.cache
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.AssemblyInfo.cs
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.csproj.CoreCompileInputs.cache
@@ -179,3 +176,11 @@ C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Page
 >>>>>>> cf48d21e69a4c378910a53c95481525f8057c32a
 C:\Mascotas\MascotaFeliz.App\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\global.json
 C:\Mascotas\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Mascotas\EditarMascota.cshtml.g.cs
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\global.json
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Frontend.csprojAssemblyReference.cache
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Duenos\EditarDuenos.cshtml.g.cs
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\DetallesVeterinarios.cshtml.g.cs
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\EditarVeterinarios.cshtml.g.cs
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\ListaVeterinarios.cshtml.g.cs
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets\MascotaFeliz.App.Frontend.StaticWebAssets.xml
