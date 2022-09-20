@@ -8,34 +8,24 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-  <link rel="shortcut icon" type="image/x-icon" href="images/icologo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icono.png">
  
 </head>
 <body>
-        <header>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="..." alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide">
-    </div>
-  </div>
-</div>
+<header>
+
   <!-- ################################################################################################ -->
- <img src="images/header1.png" alt="">
+    <img src="~/images/headerppal.png" alt="">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">MascotaFeliz</a>
+              
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+                <img src="~/images/logo.png" asp-area=""  asp-page="/Index">
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
@@ -56,22 +46,43 @@
                         </li>
                           
 
-</header>
+   </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container" style="padding-bottom: 10em;" >
+         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-   
-     <footer class="border-top footer text-muted">
-   <div class="one_quarter last">
-       
-        <img style=" margin-top:2%  " class="fl_right" src="images/fivecode.png" alt="">
+     <div style="position: absolute; bottom: 0; margin-top: 0px; padding-top: 0px; width: 100%">
+     <section>
+     <!-- Footer -->
+     <footer class="text-center text-white" style="background-color: #0a4275; bottom: 0;">
+     <!-- Grid container -->
+     <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">mascotafeliz@gmail.com</span>
+         
+        </p>
+     
+                <!-- Section: CTA -->
+              </div>
+              <!-- Grid container -->
 
-      </div>
-    </footer>
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                MIsion TIC 2022:
+                <a class="text-white" href="https://mdbootstrap.com/">Creado por equipo 2</a>
+                <img src="~/images/fivecode.png">
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+            
+       
+       </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
