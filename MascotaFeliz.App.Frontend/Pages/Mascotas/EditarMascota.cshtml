@@ -3,34 +3,30 @@
 @{
     int mascotaId = Model.mascota.Id;
 }
-<h1 class="heading">Registrar y Actualizar Mascota</h1>
+<h1 class="heading" style="text-align: center">Registrar y Actualizar Mascota</h1>
 <div class="one_quarter">
 
-    <p class="nospace btmspace-15">Por favor digite datos de la mascota</p>
-    <form class="form-group" method="post" style="margin: 10px 500px 0px 0px;">
+    <p class="nospace btmspace-15" style="    text-align: center;">Por favor digite datos de la mascota</p>
+    <form class="form-group" method="post" style=" margin: 45px 500px -29px 86px; position: absolute; ">
         <fieldset>
 
             <input asp-for="mascota.Id" type="hidden">
-            <label asp-for="mascota.Nombre"></label>
             <input asp-for="mascota.Nombre" class="btmspace-15 form-control"
-                style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8">
+                style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
+                placeholder="Nombre" asp-for="mascota.Nombre">
             <br>
-            <label asp-for="mascota.Color"></label>
             <input asp-for="mascota.Color" class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
-                asp-for="mascota.Color">
+                placeholder="Color" asp-for="mascota.Color">
             <br>
-            <label asp-for="mascota.Especie"></label>
             <input class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
-                asp-for="mascota.Especie">
+                placeholder="Especie" asp-for="mascota.Especie">
             <br>
-            <label asp-for="mascota.Raza"></label>
             <input class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
-                asp-for="mascota.Raza">
+                placeholder="Raza" asp-for="mascota.Raza">
             <br>
-            <label asp-for="mascota.Dueno"></label>
             <select class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
                 height="56px" width="80px" asp-for="mascota.Dueno">
@@ -38,7 +34,6 @@
 
             </select>
             <br>
-            <label asp-for="mascota.Veterinario"></label>
             <select class="btmspace-15 form-control" height="50px"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text" value=""
                 height="20px" name="favoriteOnly" id="favoriteOnl" asp-for="mascota.Veterinario">
@@ -53,6 +48,6 @@
     </form>
     
     <div class="one_quarter last">
-        <img style="margin-top: 5%" src="~/images/dogcat1.png" alt="">
+        <img style="margin-top: 0%;     margin-left: 52%" src="~/images/dogcat1.png" alt="">
     </div>
 </div>
