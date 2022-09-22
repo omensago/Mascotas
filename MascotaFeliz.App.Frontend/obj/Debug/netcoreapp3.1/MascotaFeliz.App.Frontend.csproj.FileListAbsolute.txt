@@ -189,3 +189,6 @@ C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Page
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\EditarVisitaPyP.cshtml.g.cs
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\DetallesVisitaPyP.cshtml.g.cs
 >>>>>>> origin/AddVeteMascota
+C:\Mascotas\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\DetallesVisitaPyP.cshtml.g.cs
+C:\Mascotas\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\EditarVisitaPyP.cshtml.g.cs
+C:\Mascotas\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\ListaVisitasPyP.cshtml.g.cs
