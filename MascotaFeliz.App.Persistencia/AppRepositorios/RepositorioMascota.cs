@@ -76,12 +76,23 @@ namespace MascotaFeliz.App.Persistencia
                 mascotaEncontrado.Color= mascota.Color;
                 mascotaEncontrado.Especie = mascota.Especie;
                 mascotaEncontrado.Raza = mascota.Raza;
-              
-
-
+                mascotaEncontrado.Veterinario.Nombres = mascota.Veterinario.Nombres;
                 _appContext.SaveChanges();
             }
             return mascotaEncontrado;
-        }     
+        } 
+        public Veterinario AddVeterinarioToMascota(int idMascota, int idVeterinario){
+            var mascotaEncontrado = _appContext.Mascotas.FirstOrDefault(m => m.Id == idMascota);
+            if(mascotaEncontrado == null){
+                var AddVeterinarioToMascota = _appContext.Veterinarios.FirstOrDefault(v => v.Id == idVeterinario);
+                if(AddVeterinarioToMascota == null){
+                    mascotaEncontrado.Veterinario = AddVeterinarioToMascota;
+                    _appContext.SaveChanges();
+                }
+                return AddVeterinarioToMascota;
+            }
+            return null;           
+        } 
+        
     }
 }

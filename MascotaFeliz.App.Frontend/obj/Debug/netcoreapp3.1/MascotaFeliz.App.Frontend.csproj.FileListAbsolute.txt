@@ -184,3 +184,6 @@ C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Page
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\EditarVeterinarios.cshtml.g.cs
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\ListaVeterinarios.cshtml.g.cs
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets\MascotaFeliz.App.Frontend.StaticWebAssets.xml
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\ListaVisitasPyP.cshtml.g.cs
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\EditarVisitaPyP.cshtml.g.cs
+C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasPyP\DetallesVisitaPyP.cshtml.g.cs
