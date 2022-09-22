@@ -1,0 +1,34 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.EditarVisitaPyPModel
+@{
+ int visitaPyPId = Model.visitaPyP.Id;
+}
+
+<h2>Agregar o editar visitaPyP </h2>
+
+<form method="post">
+    <input type="hidden" asp-for = "visitaPyP.Id" />
+
+    <label asp-for="visitaPyP.FechaVisita"></label>
+    <input asp-for="visitaPyP.FechaVisita" class="form-control">
+    <label asp-for="visitaPyP.Temperatura"></label>
+    <input asp-for="visitaPyP.Temperatura" class="form-control">
+    <label asp-for="visitaPyP.Peso"></label>
+    <input asp-for="visitaPyP.Peso" class="form-control">
+    <label asp-for="visitaPyP.FrecuenciaRespiratoria"></label>
+    <input asp-for="visitaPyP.FrecuenciaRespiratoria" class="form-control">
+    <label asp-for="visitaPyP.FrecuenciaCardiaca"></label>
+    <input asp-for="visitaPyP.FrecuenciaCardiaca" class="form-control">
+    <label asp-for="visitaPyP.EstadoAnimo"></label>
+    <input asp-for="visitaPyP.EstadoAnimo" class="form-control">
+    <label asp-for="visitaPyP.IdVeterinario"></label>
+    <input asp-for="visitaPyP.IdVeterinario" class="form-control">
+    <label asp-for="visitaPyP.Recomendaciones"></label>
+    <input asp-for="visitaPyP.Recomendaciones" class="form-control">
+
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form>
+<a asp-page="./ListaVisitasPyP" class="btn-default">Lista de visitaPyP</a>
+    
+
+
