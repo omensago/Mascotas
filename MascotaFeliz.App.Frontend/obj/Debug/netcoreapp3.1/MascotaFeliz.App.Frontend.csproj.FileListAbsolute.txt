@@ -184,3 +184,4 @@ C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Page
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\EditarVeterinarios.cshtml.g.cs
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinarios\ListaVeterinarios.cshtml.g.cs
 C:\Mascota\Mascotas\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets\MascotaFeliz.App.Frontend.StaticWebAssets.xml
+>>>>>>> 0ef843a8b1c83866f87cb07130bc14c1837d1d2c
