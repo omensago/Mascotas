@@ -1,0 +1,35 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ListaVisitasPyPModel
+@{
+}
+<h1>Listado propietario</h1>
+<table class="table">
+
+    <tr>Nombres</tr>
+    <tr>Apellidos</tr>
+    @foreach (var visitaPyP in Model.listaVisitaPyP)
+    { 
+        <tr>
+            <td>@visitaPyP.FechaVisita</td>
+            <td>@visitaPyP.Temperatura</td>
+            <td>@visitaPyP.Peso </td>
+            <td>@visitaPyP.FrecuenciaRespiratoria</td>
+            <td>@visitaPyP.FrecuenciaCardiaca </td>
+            <td>@visitaPyP.EstadoAnimo </td>
+            <td>@visitaPyP.IdVeterinario</td>
+            <td>@visitaPyP.Recomendaciones</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetallesVisitaPyP" asp-route-duenoId="@visitaPyP.Id">
+                    Detalle Visita
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditarVisitaPyP" asp-route-duenoId="@visitaPyP.Id">
+                    Editar Visita
+                </a>
+            </td>
+        </tr>
+
+    }
+</table>
+<a class="btn btn-primary table-btn" asp-page="./EditarVisitaPyP" class="btn-default">Adicionar VisitaPyP</a>
