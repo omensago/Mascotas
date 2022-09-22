@@ -7,25 +7,30 @@
 <div class="one_quarter">
 
     <p class="nospace btmspace-15">Por favor digite datos de la mascota</p>
-    <form class="form-group" method="post">
+    <form class="form-group" method="post" style="margin: 10px 500px 0px 0px;">
         <fieldset>
 
             <input asp-for="mascota.Id" type="hidden">
+            <label asp-for="mascota.Nombre"></label>
             <input asp-for="mascota.Nombre" class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8">
             <br>
-            <input class="btmspace-15 form-control"
+            <label asp-for="mascota.Color"></label>
+            <input asp-for="mascota.Color" class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
                 asp-for="mascota.Color">
             <br>
+            <label asp-for="mascota.Especie"></label>
             <input class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
                 asp-for="mascota.Especie">
             <br>
+            <label asp-for="mascota.Raza"></label>
             <input class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
                 asp-for="mascota.Raza">
             <br>
+            <label asp-for="mascota.Dueno"></label>
             <select class="btmspace-15 form-control"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text"
                 height="56px" width="80px" asp-for="mascota.Dueno">
@@ -33,6 +38,7 @@
 
             </select>
             <br>
+            <label asp-for="mascota.Veterinario"></label>
             <select class="btmspace-15 form-control" height="50px"
                 style=" background-color:#454d65; border-radius:10px;  width:100%; color: #cbb8b8" type="text" value=""
                 height="20px" name="favoriteOnly" id="favoriteOnl" asp-for="mascota.Veterinario">
@@ -43,9 +49,10 @@
             <button class="btn btn-primary" height="40px" type="submit">Guardar</button>
 
         </fieldset>
+        <a asp-page="./ListaMascotas" class="btn-default">Lista de Mascotas</a>
     </form>
-    <a asp-page="./ListaMascotas" class="btn-default">Lista de Mascotas</a>
+    
     <div class="one_quarter last">
-        <img style="margin-top: 5%" src="...\...\wwwroot\image\dogcat1.png'" alt="">
+        <img style="margin-top: 5%" src="~/images/dogcat1.png" alt="">
     </div>
 </div>

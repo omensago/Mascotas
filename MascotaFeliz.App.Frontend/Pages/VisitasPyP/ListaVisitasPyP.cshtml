@@ -2,10 +2,48 @@
 @model MascotaFeliz.App.Frontend.Pages.ListaVisitasPyPModel
 @{
 }
-<h1>Listado propietario</h1>
-<table class="table">
+<style>
+    table{
+    align-items: center;
+    width: 80%;
+    margin: 10px 20px 10px 0px;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: rgb(97, 97, 97);    
+}
+th, td{
+    padding: 15px;
+}
+thead{
+    background-color: #533483;
+    border-bottom: solid 2px #16213E;
+    color: white;
+}
 
-    <tr>FechaVisita</tr>
+tr:nth-child(even){
+    background-color: #0F3460;
+}
+tr:hover{
+    background-color: #16213E;
+    color: white;
+}
+</style>
+<h1 style="color: white;">Listado de propietarios de mascotas</h1>
+<table class="table">
+    <thead>
+            <tr>
+                <th scope="col" style="color: white;">FechaVisita</th>
+                <th scope="col" style="color: white;">Temperatura</th>
+                <th scope="col" style="color: white;">Peso</th> 
+                <th scope="col" style="color: white;">FrecuenciaRespiratoria</th> 
+                <th scope="col" style="color: white;">FrecuenciaCardiaca</th> 
+                <th scope="col" style="color: white;">EstadoAnimo</th> 
+                <th scope="col" style="color: white;">Recomendaciones</th>             
+                <th scope="col" style="color: white;"></th> 
+                <th scope="col" style="color: white;"></th> 
+            </tr>
+        </thead>
+    <tr >FechaVisita</tr>
     <tr>Temperatura</tr>
     <tr>Peso</tr>
     <tr>FrecuenciaRespiratoria</tr>
@@ -16,13 +54,13 @@
     @foreach (var visitaPyP in Model.listaVisitaPyP)
     { 
         <tr>
-            <td>@visitaPyP.FechaVisita</td>
-            <td>@visitaPyP.Temperatura</td>
-            <td>@visitaPyP.Peso </td>
-            <td>@visitaPyP.FrecuenciaRespiratoria</td>
-            <td>@visitaPyP.FrecuenciaCardiaca </td>
-            <td>@visitaPyP.EstadoAnimo </td>
-            <td>@visitaPyP.Recomendaciones</td>
+            <td style="color: white;">@visitaPyP.FechaVisita</td>
+            <td style="color: white;">@visitaPyP.Temperatura</td>
+            <td style="color: white;">@visitaPyP.Peso </td>
+            <td style="color: white;">@visitaPyP.FrecuenciaRespiratoria</td>
+            <td style="color: white;">@visitaPyP.FrecuenciaCardiaca </td>
+            <td style="color: white;">@visitaPyP.EstadoAnimo </td>
+            <td style="color: white;">@visitaPyP.Recomendaciones</td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./DetallesVisitaPyP" asp-route-duenoId="@visitaPyP.Id">
                     Detalle Visita
