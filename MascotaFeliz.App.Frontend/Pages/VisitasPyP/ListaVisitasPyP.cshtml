@@ -43,13 +43,6 @@ tr:hover{
                 <th scope="col" style="color: white;"></th> 
             </tr>
         </thead>
-    <tr >FechaVisita</tr>
-    <tr>Temperatura</tr>
-    <tr>Peso</tr>
-    <tr>FrecuenciaRespiratoria</tr>
-    <tr>FrecuenciaCardiaca</tr>
-    <tr>EstadoAnimo</tr>
-    <tr>Recomendaciones</tr>
 
     @foreach (var visitaPyP in Model.listaVisitaPyP)
     { 
@@ -62,12 +55,12 @@ tr:hover{
             <td style="color: white;">@visitaPyP.EstadoAnimo </td>
             <td style="color: white;">@visitaPyP.Recomendaciones</td>
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./DetallesVisitaPyP" asp-route-duenoId="@visitaPyP.Id">
+                <a class="btn btn-primary table-btn" asp-page="./DetallesVisitaPyP" asp-route-visitaPyPId="@visitaPyP.Id">
                     Detalle Visita
                 </a>
             </td>
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./EditarVisitaPyP" asp-route-duenoId="@visitaPyP.Id">
+                <a class="btn btn-primary table-btn" asp-page="./EditarVisitaPyP" asp-route-visitaPyPId="@visitaPyP.Id">
                     Editar Visita
                 </a>
             </td>
