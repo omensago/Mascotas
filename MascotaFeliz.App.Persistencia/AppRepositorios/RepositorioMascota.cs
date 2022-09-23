@@ -81,18 +81,30 @@ namespace MascotaFeliz.App.Persistencia
             }
             return mascotaEncontrado;
         } 
-        public Veterinario AddVeterinarioToMascota(int idMascota, int idVeterinario){
+        public Veterinario AsignarVeterinario(int idMascota, int idVeterinario){
             var mascotaEncontrado = _appContext.Mascotas.FirstOrDefault(m => m.Id == idMascota);
             if(mascotaEncontrado == null){
-                var AddVeterinarioToMascota = _appContext.Veterinarios.FirstOrDefault(v => v.Id == idVeterinario);
-                if(AddVeterinarioToMascota == null){
-                    mascotaEncontrado.Veterinario = AddVeterinarioToMascota;
+                var asignarDueno = _appContext.Veterinarios.FirstOrDefault(v => v.Id == idVeterinario);
+                if(asignarDueno == null){
+                    mascotaEncontrado.Veterinario = asignarDueno;
                     _appContext.SaveChanges();
                 }
-                return AddVeterinarioToMascota;
+                return asignarDueno;
             }
             return null;           
         } 
+        public Dueno AsignarDueno(int idMascota, int idDueno){
+            var mascotaEncontrado = _appContext.Mascotas.FirstOrDefault(m => m.Id == idMascota);
+            if(mascotaEncontrado == null){
+                var asignarDueno = _appContext.Duenos.FirstOrDefault(v => v.Id == idDueno);
+                if(asignarDueno == null){
+                    mascotaEncontrado.Dueno = asignarDueno;
+                    _appContext.SaveChanges();
+                }
+                return asignarDueno;
+            }
+            return null;           
+        }
         
     }
 }
